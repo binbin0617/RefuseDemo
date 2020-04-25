@@ -10,6 +10,9 @@ import android.widget.TextView;
 import com.bin.refusedemo.R;
 import com.bin.refusedemo.base.BaseAty;
 
+/**
+ * 首页四个分类的详情
+ */
 public class DetailsAty extends BaseAty {
 
     private TextView tv_title;
@@ -22,14 +25,15 @@ public class DetailsAty extends BaseAty {
 
     private TextView tv4;
 
+    //可回收物布局
     private RelativeLayout rl_1;
-
+    //湿垃圾布局
     private RelativeLayout rl_2;
-
+    //有害垃圾布局
     private RelativeLayout rl_3;
-
+    //湿垃圾布局
     private RelativeLayout rl_4;
-
+    //16个小图片的图
     private ImageView iv;
 
 

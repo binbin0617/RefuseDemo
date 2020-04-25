@@ -25,14 +25,16 @@ import java.util.List;
 
 public class MainAty extends BaseAty {
 
+    //首页底部四个文字显示
     private String[] tabText = {"首页", "语音", "测试", "我的"};
     //未选中icon
     private int[] normalIcon = {R.mipmap.icon_home_black, R.mipmap.icon_speak_black, R.mipmap.icon_zidian_black, R.mipmap.icon_my_black};
     //选中时icon
     private int[] selectIcon = {R.mipmap.icon_home_blue, R.mipmap.icon_speak_blue, R.mipmap.icon_zidian_blue, R.mipmap.icon_my_blue};
 
-
+    //首页的四个Fragment
     private List<Fragment> fragments = new ArrayList<>();
+
 
     private EasyNavigationBar navigationBar;
 
@@ -53,6 +55,7 @@ public class MainAty extends BaseAty {
 //                        Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.MODIFY_AUDIO_SETTINGS}, 00000000);
 //            }
 //        }
+        //动态申请权限
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED
                 || ContextCompat.checkSelfPermission(this, Manifest.permission.INTERNET) != PackageManager.PERMISSION_GRANTED
                 || ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_NETWORK_STATE) != PackageManager.PERMISSION_GRANTED

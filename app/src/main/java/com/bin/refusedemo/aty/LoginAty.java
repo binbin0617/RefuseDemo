@@ -12,7 +12,9 @@ import com.bin.refusedemo.base.BaseApplication;
 import com.bin.refusedemo.base.BaseAty;
 import com.bin.refusedemo.utils.ContactInjfoDao;
 
-
+/**
+ * 登录界面
+ */
 public class LoginAty extends BaseAty {
 
     private EditText et_name;
@@ -34,8 +36,12 @@ public class LoginAty extends BaseAty {
         mDao = new ContactInjfoDao(LoginAty.this);
     }
 
-
+    /**
+     * 登录按钮点击事件
+     * @param view
+     */
     public void loginClick(View view) {
+        //获取输入的用户名和密码
         name = et_name.getText().toString().trim();
         pass = et_pass.getText().toString().trim();
         if (TextUtils.isEmpty(name)) {
@@ -48,8 +54,8 @@ public class LoginAty extends BaseAty {
         }
         showLoadingDialog();
 
+        //根据登录名去查找密码
         String pass1 = mDao.alterDate(name);
-
         String[] temp = pass1.split("-");
         if(temp.length<=0){
             showToast("登录失败！", 1);

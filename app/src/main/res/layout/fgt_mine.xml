@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="58dp"
+            android:textColor="#333333"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="58dp"
+            android:padding="10dp"
+            android:src="@mipmap/ic_launcher" />
+
+
+    </RelativeLayout>
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="10dp"-->
+    <!--        android:background="@drawable/shape_white"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:padding="10dp">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv_xinxi"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:drawableLeft="@mipmap/icon_geren"-->
+    <!--            android:drawablePadding="10dp"-->
+    <!--            android:paddingLeft="18dp"-->
+    <!--            android:paddingTop="12dp"-->
+    <!--            android:paddingBottom="12dp"-->
+    <!--            android:text="个人信息"-->
+    <!--            android:textColor="#333333" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv_baojing"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:drawableLeft="@mipmap/icon_baojing"-->
+    <!--            android:drawablePadding="10dp"-->
+    <!--            android:paddingLeft="18dp"-->
+    <!--            android:paddingTop="12dp"-->
+    <!--            android:paddingBottom="12dp"-->
+    <!--            android:text="一键报警"-->
+    <!--            android:textColor="#333333" />-->
+
+
+    <!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_white"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_guanyu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_guanyu"
+            android:drawablePadding="10dp"
+            android:paddingLeft="18dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="关于我们"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/tv_jiancha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_jiancha"
+            android:drawablePadding="10dp"
+            android:paddingLeft="18dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="检查更新"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/tv_haoping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_haoping"
+            android:drawablePadding="10dp"
+            android:paddingLeft="18dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="速去好评"
+            android:textColor="#333333"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_yijian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_fankui"
+            android:drawablePadding="10dp"
+            android:paddingLeft="18dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="意见反馈"
+            android:textColor="#333333" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_shezhi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_white"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_exit"
+            android:drawablePadding="10dp"
+            android:paddingLeft="18dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="退出登录"
+            android:textColor="#333333" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

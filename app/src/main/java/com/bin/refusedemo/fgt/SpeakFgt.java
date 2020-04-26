@@ -64,6 +64,7 @@ public class SpeakFgt extends BaseFgt {
     }
 
     public void click() {
+        tiao = true;
         // 使用UI听写功能，请根据sdk文件目录下的notice.txt,放置布局文件和图片资源
         mIatDialog = new RecognizerDialog(getContext(), mInitListener);
 
@@ -125,10 +126,14 @@ public class SpeakFgt extends BaseFgt {
 
 //            mResultText.setText(resultBuffer.toString());
 //            mResultText.setSelection(mResultText.length());
-            Log.d("ssssssssss", resultBuffer.toString());
-            if(tiao){
+            String str = resultBuffer.toString();
+            Log.d("ssssssssss", str);
+            if (tiao) {
                 Intent intent = new Intent(getContext(), SearchAty.class);
-                intent.putExtra("lable", resultBuffer.toString());
+                if (str.contains("。")) {
+                    str = str.replace("。", "");
+                }
+                intent.putExtra("lable", str);
                 startActivity(intent);
                 tiao = false;
             }

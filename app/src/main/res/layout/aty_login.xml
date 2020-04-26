@@ -9,6 +9,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="48dp"
+        android:background="@color/colorAccent"
         android:orientation="horizontal">
 
         <TextView
@@ -16,7 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="登录"
-            android:textColor="#333333"
+            android:textColor="#ffffff"
             android:textSize="18sp" />
 
         <TextView
@@ -39,6 +40,8 @@
         android:hint="请输入用户名"
         android:maxLength="5"
         android:padding="10dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/hintColor"
         android:textSize="15sp" />
 
     <EditText
@@ -50,9 +53,11 @@
         android:layout_marginRight="50dp"
         android:background="@drawable/et_bg"
         android:hint="请输入密码"
-        android:maxLength="5"
         android:inputType="numberPassword"
+        android:maxLength="5"
         android:padding="10dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/hintColor"
         android:textSize="15sp" />
 
     <TextView
@@ -61,9 +66,9 @@
         android:layout_gravity="right"
         android:layout_marginTop="20dp"
         android:layout_marginRight="50dp"
-        android:padding="13dp"
-        android:text="前往注册"
         android:onClick="registerClick"
+        android:padding="13dp"
+        android:text="注册"
         android:textColor="#1296db"
         android:textSize="12sp" />
 

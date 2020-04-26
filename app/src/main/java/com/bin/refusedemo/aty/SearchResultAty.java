@@ -48,7 +48,7 @@ public class SearchResultAty extends BaseAty {
                 tv_name.setText(name);
                 tv_type.setText(type);
                 switch (type) {
-                    case "湿垃圾":
+                    case "干垃圾":
                         tv_title.setText("干垃圾投放指导");
                         tv1.setText("危害较小,但无再次利用价值,如建筑垃圾类,生活垃圾类等,一般采取填埋、焚烧卫生分解等方法,部分还可以使用生物解决,如放蚯蚓等。是可回收垃圾、厨余垃圾、有害垃圾剩余下来的一种垃圾。");
                         tv2.setText("");
@@ -64,7 +64,7 @@ public class SearchResultAty extends BaseAty {
                         tv4.setText("4、有尖锐边角的，应包裹后投放");
                         iv.setImageResource(R.mipmap.icon_huishou);
                         break;
-                    case "干垃圾":
+                    case "湿垃圾":
                         tv_title.setText("湿垃圾投放指导");
                         tv1.setText("1、厨余垃圾(餐厨垃圾)应从产生时就与其他类别垃圾分开归类,去除食材食品的包装物,不得混入纸巾餐具、厨房用具等;");
                         tv2.setText("2、餐厨垃圾中的废弃食用油脂,应单独存放、交付餐厨垃圾收集运输单位;");

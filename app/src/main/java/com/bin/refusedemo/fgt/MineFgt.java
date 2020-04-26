@@ -117,6 +117,7 @@ public class MineFgt extends BaseFgt {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         builder.create().dismiss();
+
                     }
                 });
                 builder.create().show();

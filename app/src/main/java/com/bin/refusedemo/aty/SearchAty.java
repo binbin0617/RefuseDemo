@@ -142,14 +142,12 @@ public class SearchAty extends BaseAty {
                                                 resultBean.setItemCategory("干垃圾");
                                                 break;
                                             default:
-
                                         }
                                         mList.add(resultBean);
                                     }
                                 }
                                 initAdapter();
                             }
-
                         }
                     }
                 });

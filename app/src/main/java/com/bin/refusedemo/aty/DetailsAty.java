@@ -1,6 +1,5 @@
 package com.bin.refusedemo.aty;
 
-import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -72,11 +71,11 @@ public class DetailsAty extends BaseAty {
                         rl_2.setVisibility(View.VISIBLE);
                         rl_3.setVisibility(View.GONE);
                         rl_4.setVisibility(View.GONE);
-                        tv_title.setText("湿垃圾投放指导");
-                        tv1.setText("1、厨余垃圾(餐厨垃圾)应从产生时就与其他类别垃圾分开归类,去除食材食品的包装物,不得混入纸巾餐具、厨房用具等;");
-                        tv2.setText("2、餐厨垃圾中的废弃食用油脂,应单独存放、交付餐厨垃圾收集运输单位;");
-                        tv3.setText("3、难以生物降解的贝壳、大骨头、毛发等,宜作为其他垃圾投放;");
-                        tv4.setText("4、厨余垃圾(餐厨垃圾)滤去水分后再投放。");
+                        tv_title.setText("干垃圾投放指导");
+                        tv1.setText("危害较小,但无再次利用价值,如建筑垃圾类,生活垃圾类等,一般采取填埋、焚烧卫生分解等方法,部分还可以使用生物解决,如放蚯蚓等。是可回收垃圾、厨余垃圾、有害垃圾剩余下来的一种垃圾。");
+                        tv2.setText("");
+                        tv3.setText("");
+                        tv4.setText("");
                         iv.setVisibility(View.GONE);
                         break;
                     case "3":
@@ -96,11 +95,11 @@ public class DetailsAty extends BaseAty {
                         rl_2.setVisibility(View.GONE);
                         rl_3.setVisibility(View.GONE);
                         rl_4.setVisibility(View.VISIBLE);
-                        tv_title.setText("干垃圾投放指导");
-                        tv1.setText("危害较小,但无再次利用价值,如建筑垃圾类,生活垃圾类等,一般采取填埋、焚烧卫生分解等方法,部分还可以使用生物解决,如放蚯蚓等。是可回收垃圾、厨余垃圾、有害垃圾剩余下来的一种垃圾。");
-                        tv2.setText("");
-                        tv3.setText("");
-                        tv4.setText("");
+                        tv_title.setText("湿垃圾投放指导");
+                        tv1.setText("1、厨余垃圾(餐厨垃圾)应从产生时就与其他类别垃圾分开归类,去除食材食品的包装物,不得混入纸巾餐具、厨房用具等;");
+                        tv2.setText("2、餐厨垃圾中的废弃食用油脂,应单独存放、交付餐厨垃圾收集运输单位;");
+                        tv3.setText("3、难以生物降解的贝壳、大骨头、毛发等,宜作为其他垃圾投放;");
+                        tv4.setText("4、厨余垃圾(餐厨垃圾)滤去水分后再投放。");
 //                        iv.setImageResource(R.mipmap.icon_youdulaji);
                         iv.setVisibility(View.GONE);
                         break;

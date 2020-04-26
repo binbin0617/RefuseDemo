@@ -51,8 +51,6 @@ allprojects {
             url 'http://jcenter.bintray.com/'
         }
         google()
-
-
     }
 }
 

@@ -63,10 +63,10 @@ public class MineFgt extends BaseFgt {
         ll_shezhi = view.findViewById(R.id.ll_shezhi);
         tv_name = view.findViewById(R.id.tv_name);
         iv_head = view.findViewById(R.id.iv_head);
-//        String name = BaseApplication.getPreferences().getString("name", "");
-//        if (!TextUtils.isEmpty(name)) {
-//            tv_name.setText(name);
-//        }
+        String name = BaseApplication.getPreferences().getString("name", "");
+        if (!TextUtils.isEmpty(name)) {
+            tv_name.setText(name);
+        }
         initClick();
         return view;
     }

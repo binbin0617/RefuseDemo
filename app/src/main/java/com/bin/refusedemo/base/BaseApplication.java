@@ -1,16 +1,16 @@
 package com.bin.refusedemo.base;
 
+import android.app.Activity;
 import android.app.Application;
 import android.content.SharedPreferences;
+
+import com.iflytek.cloud.SpeechConstant;
+import com.iflytek.cloud.SpeechUtility;
 
 public class BaseApplication extends Application {
 
     private static SharedPreferences preferences;
     private static Boolean isLogin = false;
-
-
-
-
 
     public static Boolean getIsLogin() {
         return isLogin;
@@ -29,10 +29,11 @@ public class BaseApplication extends Application {
     }
 
 
-
     @Override
     public void onCreate() {
         super.onCreate();
-//        isLogin = preferences.getBoolean("islogin", false);
+        preferences = getSharedPreferences("IpAndPort", Activity.MODE_PRIVATE);
+        isLogin = preferences.getBoolean("islogin", false);
+        SpeechUtility.createUtility(getApplicationContext(), SpeechConstant.APPID + "=5d36bc8a");
     }
 }

@@ -49,6 +49,14 @@ public class RegisterAty extends BaseAty {
             showToast("密码不能为空", 1);
             return;
         }
+        //根据登录名去查找密码
+        String pass1 = mDao.alterDate(name);
+        String[] temp = pass1.split("-");
+        if (!pass1.equals("null-null-null")) {
+            showToast("当前账号已经被注册！", 1);
+            dismissLoadingDialog();
+            return;
+        }
         showLoadingDialog();
         long addLong = mDao.addDate(name, pass, "", "");
         if (addLong == -1) {

@@ -36,6 +36,7 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="58dp"
             android:textColor="#333333"
+            android:text="测试"
             android:textSize="30sp" />
 
         <ImageView

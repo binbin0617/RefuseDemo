@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TestAty extends BaseAty {
-    private Button btn_sub1;
+    private TextView btn_sub1;
 
     private List<RefuseBean> mList;
 

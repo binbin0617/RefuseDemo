@@ -94,11 +94,9 @@ public class TestAty extends BaseAty {
                 isXaun = true;
             }
         });
-        btn_sub1.setOnClickListener(new View.OnClickListener() {
-            //计分
-            Double count = 0.00;
-//            boolean isoncl = true;
 
+
+        btn_sub1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 TextView answer = (TextView) findViewById(R.id.answer);
@@ -108,9 +106,8 @@ public class TestAty extends BaseAty {
                     showToast("请选择答案", 1);
                     return;
                 }
-//                if (isoncl) {
-//                    isoncl = false;
                 String select11 = select1.getText().toString();
+
                 if (select11.equals(mList.get(num - 1).getName())) {
                     for (int i = 0; i < select1_1.getChildCount(); i++) {
                         RadioButton select1_1_1 = (RadioButton) select1_1.getChildAt(i);

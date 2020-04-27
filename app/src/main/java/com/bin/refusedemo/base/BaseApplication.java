@@ -34,6 +34,6 @@ public class BaseApplication extends Application {
         super.onCreate();
         preferences = getSharedPreferences("IpAndPort", Activity.MODE_PRIVATE);
         isLogin = preferences.getBoolean("islogin", false);
-        SpeechUtility.createUtility(getApplicationContext(), SpeechConstant.APPID + "=5d36bc8a");
+        SpeechUtility.createUtility(getApplicationContext(), SpeechConstant.APPID + "=5ea67b14");
     }
 }
